@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -76,3 +77,31 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# ReduceBillingExecutionTimeUsingQueue
+
+Note: this test was done using laravel.
+Php is a single threaded language, so the nearest possible solution is to take advantage of Laravel Queue system.
+
+technically, the number of excecution time can be reduced by running multiple jobs concurrently, by so doing if it takes 1.6s to process a request, while it takes 44 hours to process 10,000 customers' request,
+multiple jobs could be created, whereby each job can be configured to run 10 request to bill 10 customers, if it takes 1.6s to process a request,
+now it takes the same number of seconds to process about 100 requets.
+
+Intalling this project.
+
+kindly clone this repo.
+
+i seeded 100 customer data for this approach.
+
+i created an instance by using job to handle api calls; following the above description.
+
+i pulled in guzzle to demonstrate api consumption. 
+
+jobs created can be found in App/Jobs.
+
+
+please note: this repo only demonstrate how the problem could be solved, it doesnt conatin any real life functionality.
+
+
+
+>>>>>>> 2985cb4b1c0650b34fb55973be253fc03d3b515e
