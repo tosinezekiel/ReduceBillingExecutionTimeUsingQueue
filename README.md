@@ -13,7 +13,7 @@ kindly clone this repo.
 
 i seeded 100 customer data for this approach.
 
-i created job to handle api calls; following the above description.
+i created an instance by using job to handle api calls; following the above description.
 
 i pulled in guzzle to demonstrate api consumption. 
 
